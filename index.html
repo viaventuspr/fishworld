@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishWorld Ceylon - Premium Freshwater Fish</title>
+    <style>
+        /* සරල CSS පෙනුම */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f4f7f6; color: #333; }
+        header { background-color: #0e7490; color: white; padding: 20px; text-align: center; }
+        nav { background: #083344; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 14px; }
+        .hero { background: #155e75; color: white; padding: 60px 20px; text-align: center; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; }
+        .fish-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); overflow: hidden; padding: 15px; text-align: center; }
+        .card h3 { color: #0e7490; margin: 10px 0; }
+        .price { font-weight: bold; color: #155e75; font-size: 1.2em; }
+        .btn { background: #0e7490; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 10px; }
+        .btn:hover { background: #083344; }
+        footer { text-align: center; padding: 20px; background: #083344; color: white; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FishWorld Ceylon</h1>
+    <p>Premium Freshwater Fish from Sri Lanka</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#freshwater">Freshwater Fish</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h2>Exotic Freshwater Fish, Direct from Ceylon</h2>
+    <p>Discover our hand-selected collection of premium tropical fish.</p>
+    <a href="#" class="btn">Shop Now</a>
+</div>
+
+<div class="container">
+    <h2>Customer Favorites</h2>
+    <div class="fish-grid">
+        <div class="card">
+            <h3>Neon Tetra</h3>
+            <p><i>Paracheirodon innesi</i></p>
+            <p class="price">Rs. 250</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="card">
+            <h3>Betta Fish</h3>
+            <p><i>Betta splendens</i></p>
+            <p class="price">Rs. 850</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="card">
+            <h3>Guppy Mixed</h3>
+            <p><i>Poecilia reticulata</i></p>
+            <p class="price">Rs. 150</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 FishWorld Ceylon. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
