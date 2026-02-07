@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FishWorld Ceylon - Premium Freshwater Fish</title>
     <style>
-        /* සරල CSS පෙනුම */
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f4f7f6; color: #333; }
         header { background-color: #0e7490; color: white; padding: 20px; text-align: center; }
         nav { background: #083344; padding: 10px; text-align: center; }
@@ -13,7 +12,11 @@
         .hero { background: #155e75; color: white; padding: 60px 20px; text-align: center; }
         .container { max-width: 1000px; margin: 20px auto; padding: 20px; }
         .fish-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .card { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); overflow: hidden; padding: 15px; text-align: center; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); overflow: hidden; padding: 0; text-align: center; padding-bottom: 15px; }
+        
+        /* පින්තූරය සයිස් කරන හැටි */
+        .fish-img { width: 100%; height: 200px; object-fit: cover; background-color: #ddd; }
+        
         .card h3 { color: #0e7490; margin: 10px 0; }
         .price { font-weight: bold; color: #155e75; font-size: 1.2em; }
         .btn { background: #0e7490; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 10px; }
@@ -44,24 +47,31 @@
 <div class="container">
     <h2>Customer Favorites</h2>
     <div class="fish-grid">
+        
         <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Neon+Tetra" class="fish-img" alt="Neon Tetra">
             <h3>Neon Tetra</h3>
             <p><i>Paracheirodon innesi</i></p>
             <p class="price">Rs. 250</p>
             <button class="btn">Add to Cart</button>
         </div>
+
         <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Betta+Fish" class="fish-img" alt="Betta">
             <h3>Betta Fish</h3>
             <p><i>Betta splendens</i></p>
             <p class="price">Rs. 850</p>
             <button class="btn">Add to Cart</button>
         </div>
+
         <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Guppy" class="fish-img" alt="Guppy">
             <h3>Guppy Mixed</h3>
             <p><i>Poecilia reticulata</i></p>
             <p class="price">Rs. 150</p>
             <button class="btn">Add to Cart</button>
         </div>
+
     </div>
 </div>
 
